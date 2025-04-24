@@ -53,7 +53,7 @@ def main():
         if st.button("Clear Conversation"):
             st.session_state.conversation_manager.clear_conversation()
             st.session_state.messages = []
-            st. lrerun()
+            st.experimental_rerun()
             
         # Display sentiment statistics if available
         if 'sentiment_stats' in st.session_state:
